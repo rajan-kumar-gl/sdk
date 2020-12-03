@@ -1,11 +1,11 @@
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
-require 'clients/version'
+require 'constants'
 
 Gem::Specification.new do |spec|
   spec.name          = 'bulk-sms'
-  spec.version       = BulkSMS::VERSION
+  spec.version       = BulkSMS::PkgInfo::VERSION
   spec.authors       = ['GreatLearning Tech Team']
   spec.email         = ['dev@greatleaning.in']
 
