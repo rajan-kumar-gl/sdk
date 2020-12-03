@@ -1,0 +1,6 @@
+#!/bin/bash
+
+set -eu -o pipefail
+pushd "${SDK_ROOT}/bulk_sms"
+  gem build ./bulk-sms.gemspec && gem install bulk_sms
+popd

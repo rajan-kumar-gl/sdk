@@ -3,4 +3,4 @@
 set -euo pipefail
 
 VERSION="${1}"
-gem push "cf-copilot-${VERSION}.gem"
+gem push "bulk-sms-${VERSION}.gem"
