@@ -11,6 +11,8 @@ module BulkSMS
         case client_name
         when BulkSMS::Clients::MSG91
           Upstreams::MSG91.new opts
+        when BulkSMS::Clients::Kaleyra
+          Upstreams::Kaleyra.new opts
         else
           raise StandardError.new "No Client found for #{client_name}"
         end
